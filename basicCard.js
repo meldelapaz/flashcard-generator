@@ -29,61 +29,109 @@ var five = new flashCard("Who does Michael hate more than anyone in the world?",
 
 //INQUIRER PROMPTS -------------------------------
 var inquirer = require('inquirer');
+
 inquirer.prompt([/* Pass your questions in here */
 	{
 		type: 'input',
 		message: one.front,
 		name: 'one'
-	},
-	{
-		type: 'input',
-		message: two.front,
-		name: 'two'
-	},
-	{
-		type: 'input',
-		message: three.front,
-		name: 'three'
-	},
-	{
-		type: 'input',
-		message: four.front,
-		name: 'four'
-	},
-	{
-		type: 'input',
-		message: five.front,
-		name: 'five'
 	}
-
-//ANSWERS -------------------------------------------
 ]).then(function (answers) {
     if (inquirer.one === one.back) {
     	console.log('Correct')
     } else {
     	console.log('Wrong! Correct Answer: ' + one.back)
     }
-    if (inquirer.two === two.back) {
+
+
+inquirer.prompt([
+	{
+		type: 'input',
+		message: two.front,
+		name: 'two'
+	}
+]).then(function (answers) {
+	if (inquirer.two === two.back) {
     	console.log('Correct')
     } else {
-    	console.log('Wrong! Correct Answer: ' + one.back)
+    	console.log('Wrong! Correct Answer: ' + two.back)
     }
-    if (inquirer.three === three.back) {
+
+
+inquirer.prompt([
+	{
+		type: 'input',
+		message: three.front,
+		name: 'three'
+	}
+]).then(function (answers) {
+	if (inquirer.three === three.back) {
     	console.log('Correct')
     } else {
-    	console.log('Wrong! Correct Answer: ' + one.back)
+    	console.log('Wrong! Correct Answer: ' + three.back)
     }
-    if (inquirer.four === four.back) {
+
+
+inquirer.prompt([
+	{
+		type: 'input',
+		message: four.front,
+		name: 'four'
+	}
+]).then(function (answers) {
+	if (inquirer.four === four.back) {
     	console.log('Correct')
     } else {
-    	console.log('Wrong! Correct Answer: ' + one.back)
+    	console.log('Wrong! Correct Answer: ' + four.back)
     }
-    if (inquirer.five === one.five) {
+
+
+inquirer.prompt([
+	{
+		type: 'input',
+		message: five.front,
+		name: 'five'
+	}
+]).then(function (answers) {
+	if (inquirer.five === five.back) {
     	console.log('Correct')
     } else {
-    	console.log('Wrong! Correct Answer: ' + one.back)
+    	console.log('Wrong! Correct Answer: ' + five.back)
     }
 });
+});
+});
+});
+});
+
+//ANSWERS -------------------------------------------
+// ]).then(function (answers) {
+//     if (inquirer.one === one.back) {
+//     	console.log('Correct')
+//     } else {
+//     	console.log('Wrong! Correct Answer: ' + one.back)
+//     }
+//     if (inquirer.two === two.back) {
+//     	console.log('Correct')
+//     } else {
+//     	console.log('Wrong! Correct Answer: ' + one.back)
+//     }
+//     if (inquirer.three === three.back) {
+//     	console.log('Correct')
+//     } else {
+//     	console.log('Wrong! Correct Answer: ' + one.back)
+//     }
+//     if (inquirer.four === four.back) {
+//     	console.log('Correct')
+//     } else {
+//     	console.log('Wrong! Correct Answer: ' + one.back)
+//     }
+//     if (inquirer.five === one.five) {
+//     	console.log('Correct')
+//     } else {
+//     	console.log('Wrong! Correct Answer: ' + one.back)
+//     }
+// });
 
 
 //module.exports = basicCard;

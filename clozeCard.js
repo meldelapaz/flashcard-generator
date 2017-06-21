@@ -12,3 +12,21 @@
 //   * The constructor should throw or log an error when the cloze deletion does _not_ appear in the input text.
 
 //   * Use prototypes to attach these methods, wherever possible.
+
+
+function clozeCard(front,back) {
+	this.clozeDeleted = clozeDeleted;
+	this.patialText = patialText;
+	this.fullText = fullText;
+}
+
+
+
+
+
+
+module.exports = clozeCard
+
+
+
+

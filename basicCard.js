@@ -44,64 +44,64 @@ inquirer.prompt([/* Pass your questions in here */
     }
 
 
-inquirer.prompt([
-	{
-		type: 'input',
-		message: two.front,
-		name: 'two'
-	}
-]).then(function (answers) {
-	if (inquirer.two === two.back) {
-    	console.log('Correct')
-    } else {
-    	console.log('Wrong! Correct Answer: ' + two.back)
-    }
+	inquirer.prompt([
+		{
+			type: 'input',
+			message: two.front,
+			name: 'two'
+		}
+	]).then(function (answers) {
+		if (inquirer.two === two.back) {
+	    	console.log('Correct')
+	    } else {
+	    	console.log('Wrong! Correct Answer: ' + two.back)
+	    }
 
 
-inquirer.prompt([
-	{
-		type: 'input',
-		message: three.front,
-		name: 'three'
-	}
-]).then(function (answers) {
-	if (inquirer.three === three.back) {
-    	console.log('Correct')
-    } else {
-    	console.log('Wrong! Correct Answer: ' + three.back)
-    }
+		inquirer.prompt([
+			{
+				type: 'input',
+				message: three.front,
+				name: 'three'
+			}
+		]).then(function (answers) {
+			if (inquirer.three === three.back) {
+		    	console.log('Correct')
+		    } else {
+		    	console.log('Wrong! Correct Answer: ' + three.back)
+		    }
 
 
-inquirer.prompt([
-	{
-		type: 'input',
-		message: four.front,
-		name: 'four'
-	}
-]).then(function (answers) {
-	if (inquirer.four === four.back) {
-    	console.log('Correct')
-    } else {
-    	console.log('Wrong! Correct Answer: ' + four.back)
-    }
+			inquirer.prompt([
+				{
+					type: 'input',
+					message: four.front,
+					name: 'four'
+				}
+			]).then(function (answers) {
+				if (inquirer.four === four.back) {
+			    	console.log('Correct')
+			    } else {
+			    	console.log('Wrong! Correct Answer: ' + four.back)
+			    }
 
 
-inquirer.prompt([
-	{
-		type: 'input',
-		message: five.front,
-		name: 'five'
-	}
-]).then(function (answers) {
-	if (inquirer.five === five.back) {
-    	console.log('Correct')
-    } else {
-    	console.log('Wrong! Correct Answer: ' + five.back)
-    }
-});
-});
-});
-});
+				inquirer.prompt([
+					{
+						type: 'input',
+						message: five.front,
+						name: 'five'
+					}
+				]).then(function (answers) {
+					if (inquirer.five === five.back) {
+				    	console.log('Correct')
+				    } else {
+				    	console.log('Wrong! Correct Answer: ' + five.back)
+				    }
+				});
+			});
+		});
+	});
 });
 
 //ANSWERS -------------------------------------------

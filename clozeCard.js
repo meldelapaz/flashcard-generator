@@ -24,9 +24,6 @@ var two = new runapp.clozeCard("chris rock", "In S1E2 Diversity Day: Michael imm
 
 var three = new runapp.clozeCard("kevin malone", "In the episode Spooked, we find out that ... is deathly afraid of mummies.", "In the episode Spooked, we find out that Kevin Malone is deathly afraid of mummies.");
 
-// var four = new flashCard("Who plays Michael Scott?", "steve carell");
-
-// var five = new flashCard("Who does Michael hate more than anyone in the world?", "toby flenderson");
 
 
 //INQUIRER PROMPTS -------------------------------
@@ -49,16 +46,7 @@ inquirer.prompt([/* Pass your questions in here */
 		message: three.clozePartial,
 		name: 'Tres'
 	}
-	// {
-	// 	type: 'input',
-	// 	message: four.clozePartial,
-	// 	name: 'Quatro'
-	// }
-	// {
-	// 	type: 'input',
-	// 	message: five.front,
-	// 	name: 'Cinco'
-	// }
+
 
 ]).then(function (inquirer) {
 	if (inquirer.Uno === one.clozeDeleted) {
@@ -76,14 +64,5 @@ inquirer.prompt([/* Pass your questions in here */
 	} else {
 		console.log('Wrong! Correct Answer: ' + three.clozeDeleted)
 	}
-	// if (inquirer.Quatro === four.clozeDeleted) {
-	// 	console.log('Correct')
-	// } else {
-	// 	console.log('Wrong! Correct Answer: ' + four.clozeDeleted)
-	// }
-	// if (inquirer.Cinco === five.back) {
-	// 	console.log('Correct')
-	// } else {
-	// 	console.log('Wrong! Correct Answer: ' + five.back)
-	// }
+	
 });

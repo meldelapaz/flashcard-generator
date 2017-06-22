@@ -13,11 +13,11 @@
 
 //   * Use prototypes to attach these methods, wherever possible.
 
-//CONSTRUCTOR TO MAKE NEW CARDS ----------------
+//CONNECTING RUNAPP.JS WHERE THE CONSTRUCTORS ARE ----------------
 var runapp = require('./runapp.js');
 
 
-//FLASHCARDS ------------------------------------
+//CREATING NEW FLASHCARDS ------------------------------------
 var one = new runapp.clozeCard("ryan howard", "In S1E1 Pilot: ... started their first day at Dunder Mifflin Scranton?", "In S1E1 Pilot: Ryan Howard started their first day at Dunder Mifflin Scranton?");
 
 var two = new runapp.clozeCard("chris rock", "In S1E2 Diversity Day: Michael immitates ...'s famous comedy stand up routine.", "In S1E2 Diversity Day: Michael immitates Chris Rock's famous comedy stand up routine.");
@@ -47,7 +47,7 @@ inquirer.prompt([/* Pass your questions in here */
 		name: 'Tres'
 	}
 
-
+//RESULTS/ANSWERS----------------------------
 ]).then(function (inquirer) {
 	if (inquirer.Uno === one.clozeDeleted) {
 		console.log('Correct')

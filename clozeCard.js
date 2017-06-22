@@ -14,19 +14,15 @@
 //   * Use prototypes to attach these methods, wherever possible.
 
 //CONSTRUCTOR TO MAKE NEW CARDS ----------------
-function clozeCard(clozeDeleted, clozePartial, clozeFull) {
-	this.clozeDeleted = clozeDeleted;
-	this.clozePartial = clozePartial;
-	this.clozeFull = clozeFull;
-};
+var runapp = require('./runapp.js');
 
 
 //FLASHCARDS ------------------------------------
-var one = new clozeCard("ryan howard", "In S1E1 Pilot: ... started their first day at Dunder Mifflin Scranton?", "In S1E1 Pilot: Ryan Howard started their first day at Dunder Mifflin Scranton?");
+var one = new runapp.clozeCard("ryan howard", "In S1E1 Pilot: ... started their first day at Dunder Mifflin Scranton?", "In S1E1 Pilot: Ryan Howard started their first day at Dunder Mifflin Scranton?");
 
-var two = new clozeCard("chris rock", "In S1E2 Diversity Day: Michael immitates ...'s famous comedy stand up routine.", "In S1E2 Diversity Day: Michael immitates Chris Rock's famous comedy stand up routine.");
+var two = new runapp.clozeCard("chris rock", "In S1E2 Diversity Day: Michael immitates ...'s famous comedy stand up routine.", "In S1E2 Diversity Day: Michael immitates Chris Rock's famous comedy stand up routine.");
 
-var three = new clozeCard("kevin malone", "In the episode Spooked, we find out that ... is deathly afraid of mummies.", "In the episode Spooked, we find out that Kevin Malone is deathly afraid of mummies.");
+var three = new runapp.clozeCard("kevin malone", "In the episode Spooked, we find out that ... is deathly afraid of mummies.", "In the episode Spooked, we find out that Kevin Malone is deathly afraid of mummies.");
 
 // var four = new flashCard("Who plays Michael Scott?", "steve carell");
 

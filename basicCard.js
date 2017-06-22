@@ -8,23 +8,19 @@
 //   * The constructed object should have a `back` property that contains the text on the back of the card.
 
 
-//CONSTRUCTOR TO MAKE NEW CARDS ----------------
-function flashCard(front,back) {
-	this.front = front;
-	this.back = back
-};
+var runapp = require('./runapp.js');
 
 
 //FLASHCARDS ------------------------------------
-var one = new flashCard("In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?", "ryan howard");
+var one = new runapp.flashCard("In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?", "ryan howard");
 
-var two = new flashCard("In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?", "chris rock");
+var two = new runapp.flashCard("In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?", "chris rock");
 
-var three = new flashCard("In the episode Spooked, who do we find out is deathly afraid of mummies?", "kevin malone");
+var three = new runapp.flashCard("In the episode Spooked, who do we find out is deathly afraid of mummies?", "kevin malone");
 
-var four = new flashCard("Who plays Michael Scott?", "steve carell");
+var four = new runapp.flashCard("Who plays Michael Scott?", "steve carell");
 
-var five = new flashCard("Who does Michael hate more than anyone in the world?", "toby flenderson");
+var five = new runapp.flashCard("Who does Michael hate more than anyone in the world?", "toby flenderson");
 
 
 //INQUIRER PROMPTS -------------------------------
